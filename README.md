@@ -18,7 +18,7 @@
 
         **mkdir -p $HOME/models**
 
-        **下载人像分割pb模型到上述目录中，下载地址：https://cloud.tsinghua.edu.cn/f/e96be6f82e994ecc8fb6/?dl=1**
+        **下载人像分割portrait.pb模型（也可下载portrait_0.5.pb和portrait_lite.pb，分别为优化后的模型，推理更快）到上述目录中，下载地址：https://cloud.tsinghua.edu.cn/d/7154825795564ff9b935/**
 
 3.  将原始网络模型转换为适配昇腾AI处理器的模型。
 
@@ -37,7 +37,9 @@
     
 4.  将转换好的模型文件（.om文件）上传到[步骤1]中源码所在路径下的“**PortraitC73/model**”目录下。
     
-     **cp \\$HOME/modelzoo/portrait/device/portrait.om \\$HOME/AscendProjects/PortraitC73/model/**
+    **提供转换好的模型文件，下载地址：https://cloud.tsinghua.edu.cn/d/b3b55a670e714abe9598/**
+
+    **cp \\$HOME/modelzoo/portrait/device/portrait.om \\$HOME/AscendProjects/PortraitC73/model/**
   
 
 ## 环境配置
